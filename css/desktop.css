@@ -1,0 +1,110 @@
+.header {
+    justify-content: space-between;
+}
+
+.header__nav {
+    display: flex;
+    position: relative;
+    right: 100px;
+}
+
+.header__nav nav {
+    display: flex;
+    position: relative;
+    top: 40px;
+    flex-direction: row;
+}
+
+.header__nav nav ul {
+    display: flex;
+    position: relative;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+.header__nav nav ul li {
+    margin-left: 60px;
+    list-style: none;
+}
+
+.header__nav nav ul li a {
+    color: var(--light-couleur);
+    text-decoration: none;
+}
+
+.header__nav nav ul li a:hover {
+    color: var(--couleur-special);
+}
+
+main {
+    margin: 25px 100px;
+}
+
+.main__hero--presentation {
+    font-size: clamp(5rem, 8vw, 7rem);
+}
+
+.content h3 {
+    font-size: 2rem;
+}
+
+.main__about {
+    width: 100%;
+    display: flex;
+}
+
+.main__about--title,
+.main__proyectos--title,
+.main__projects--title,
+.main__contact--title {
+    margin: 50px 0px 20px 0px;
+    font-size: 3rem;
+}
+
+.main__about--title::after,
+.main__proyectos--title::after,
+.main__projects--title::after,
+.main__contact--title::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: -11px;
+    left: 170px;
+    width: 75%;
+    height: .5px;
+    margin-left: 20px;
+    background-color: var(--couleur);
+}
+
+.main__about--title::after {
+    width: 145%;
+}
+
+.main__about--skills li {
+    color: var(--couleur);
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+}
+
+.main__about--img {
+    display: flex;
+    position: relative;
+    top: 115px;
+    width: 100%;
+    min-width: 300px;
+    min-height: 300px;
+    border-radius: 5px;
+    margin: 0 0 320px 50px;
+    background: url('../assets/img/foto.png') center/cover no-repeat;
+}
+
+
+.main__social-networks {
+    display: flex;
+    margin: 0 10px 50px;
+    justify-content: center;
+}
+
+svg {
+    margin-top: 20px;
+}

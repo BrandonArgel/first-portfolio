@@ -12,6 +12,11 @@
     <meta name="keywords" content="Brandon Argel Frontend Developer" />
     <title>Brandon Argel</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="./css/desktop.css"
+      media="(min-width: 777px)"
+    />
     <link rel="apple-touch-icon" href="./assets/svg/logo.svg" />
     <meta name="theme-color" content="#002040" />
     <link
@@ -29,9 +34,9 @@
         <div class="header__nav">
           <nav>
             <ul>
-              <li><a href="#">Sobre mí</a></li>
-              <li><a href="#">Proyectos</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#main__about">Sobre mí</a></li>
+              <li><a href="#main__projects--title">Proyectos</a></li>
+              <li><a href="#main__contact">Contacto</a></li>
             </ul>
           </nav>
         </div>
@@ -41,13 +46,13 @@
           <h1 class="main__hero--title">Hola, mi nombre es</h1>
           <p class="main__hero--presentation">
             Brandon Argel.<br /><span class="main__hero--presentation-do"
-              >Y yo construyo sitios web.</span
+              >Yo construyo sitios web.</span
             >
           </p>
           <p class="main__hero--info">
             Soy un
             <span class="main__hero--info-career">Frontend Developer</span> en
-            constante aprendizaje y evolución de México y me especializo en
+            constante aprendizaje y evolución que vive México y me especializo en
             construir (y ocasionalmente diseñar) sitios web.
           </p>
           <div class="main__hero--buttons">
@@ -57,16 +62,25 @@
             <a class="button main__button--cv" href="#">Currículum</a>
           </div>
         </section>
-        <section class="main__about">
+        <section class="main__about" id="main__about">
           <div class="main__about--info">
             <h2 class="main__about--title">Sobre mí</h2>
             <p>
-              ¡Hola! Soy Brandon Argel, disfruto aprendiendo y creando cosas
-              nuevas todos los días con mis conocimientos.
+              ¡Hola! Soy Brandon Argel, actualmente vivo en México, tengo 18 años
+              de edad y disfruto aprendiendo y creando cosas nuevas todos los
+              días.
             </p>
             <p>
-              Poco después de graduarme de la Universidad de Guadalajara,
-              comencé mis estudios en Platzi y decidí adoptar su lema:
+              Poco antes de graduarme de la
+              <span class="main__about--studies"
+                >Universidad de Guadalajara</span
+              >, comencé mis estudios en
+              <a
+                class="main__about--studies"
+                href="https://platzi.com"
+                >Platzi</a
+              >
+              y decidí adoptar su lema:
             </p>
             <p class="main__about--info-motto">Nunca pares de aprender</p>
             <p>
@@ -75,24 +89,18 @@
             </p>
             <ul class="main__about--skills">
               <li>JavaScript (ES6+)</li>
-              <li>HTML &S(CSS)</li>
+              <li>HTML & S(CSS)</li>
               <li>Visual Studio Code</li>
               <li>Git & GitHub</li>
               <li>Terminal de comandos</li>
               <li>CodeStream</li>
             </ul>
           </div>
-          <div class="main__about--img">
-            <img
-              class="main__about--foto"
-              src="./assets/img/foto.png"
-              alt="Foto de Brandon"
-              height="100px"
-              width="100px"
-            />
-          </div>
+          <div class="main__about--img"></div>
         </section>
-        <h2 class="main__projects--title">Proyectos</h2>
+        <h2 id="main__projects--title" class="main__projects--title">
+          Proyectos
+        </h2>
         <section class="main__projects">
           <!-- First Project -->
           <section class="main__projects--project">
@@ -100,7 +108,7 @@
               <h3 class="main__project--title">Platzi Video</h3>
               <p class="main__project--description">
                 Proyecto de platzi, sobre el diseño de una aplicación web de
-                videos
+                videos.
               </p>
             </div>
             <div class="main__projects--img">
@@ -122,18 +130,18 @@
               >
             </div>
           </section>
-
+          <!-- Second Project -->
           <section class="main__projects--project">
             <div class="main__project--info">
               <h3 class="main__project--title">Batatabit</h3>
               <p class="main__project--description">
-                Proyecto de platzi, empresa de intercambio de criptomonedas
+                Proyecto de platzi, empresa de intercambio de criptomonedas.
               </p>
             </div>
             <div class="main__projects--img">
               <img
                 src="./assets/img/batatabit.png"
-                alt="Proyecto Platzi Video"
+                alt="Proyecto Platzi Batatabit"
               />
             </div>
             <div class="main__container--buttons">
@@ -149,8 +157,30 @@
               >
             </div>
           </section>
+          <!-- Third Project -->
+          <section class="main__projects--project">
+            <div class="main__project--info">
+              <h3 class="main__project--title">Mi página web</h3>
+              <p class="main__project--description">
+                Proyecto personal, creación de portafolio.
+              </p>
+            </div>
+            <div class="main__projects--img">
+              <img
+                src="./assets/img/mi-pagina.png"
+                alt="Proyecto Portafolio Personal"
+              />
+            </div>
+            <div class="main__container--buttons">
+              <a
+                class="project-button"
+                href="https://github.com/BrandonArgel/BrandonArgel.github.io"
+                >Github</a
+              >
+            </div>
+          </section>
         </section>
-        <section class="main__contact">
+        <section id="main__contact" class="main__contact">
           <h2 class="main__contact--title">Contact</h2>
           <p class="main__contact--info">
             Actualmente estoy buscando nuevas oportunidades, mi bandeja de
@@ -160,9 +190,71 @@
             saludarme, no dude en contactarme. A continuación se muestran mis
             redes sociales y mi correo electrónico:
           </p>
+          <a class="main__contact--mail" href="mailto:brandargel@gmail.com"
+            >brandargel@gmail.com</a
+          >
+          <br />
+          <br />
+          <br />
+          <div class="main__social-networks">
+            <a class="github" href="https://github.com/BrandonArgel"
+              >Github <br /><br />
+              <svg
+                height="30"
+                role="img"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#8899bb"
+                stroke-width="2"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path>
+              </svg>
+            </a>
+
+            <a class="instagram" href="https://www.instagram.com/brandargel/"
+              >Instagram <br /><br />
+              <svg
+                height="30"
+                role="img"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#8899bb"
+                stroke-width="2"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                ></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a class="linkedin" href="https://www.linkedin.com/in/brandargel/"
+              >Linkedin <br /><br />
+              <svg
+                height="30"
+                role="img"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#8899bb"
+                stroke-width="2"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                ></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a class="platzi" href="https://platzi.com/p/BrandArgel/">
+              Platzi <br /><br />
+              <div class="logo-platzi"></div>
+            </a>
+          </div>
         </section>
         <footer class="footer">
-
+          <p class="footer--info">© Sitio construido por Brandon Argel 2021</p>
         </footer>
       </main>
     </div>
