@@ -12,16 +12,159 @@
     <meta name="keywords" content="Brandon Argel Frontend Developer" />
     <title>Brandon Argel</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="apple-touch-icon" href="./assets/svg/logo.svg" />
+    <meta name="theme-color" content="#002040" />
     <link
       rel="shortcut icon"
       href="./assets/svg/logo.svg"
       type="image/x-icon"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
   </head>
-  <body></body>
+  <body>
+    <div class="content">
+      <header class="header">
+        <div class="header__logo">
+          <img src="./assets/svg/logo.svg" alt="Logo" height="50" width="50" />
+        </div>
+        <div class="header__nav">
+          <nav>
+            <ul>
+              <li><a href="#">Sobre mí</a></li>
+              <li><a href="#">Proyectos</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <section class="main__hero">
+          <h1 class="main__hero--title">Hola, mi nombre es</h1>
+          <p class="main__hero--presentation">
+            Brandon Argel.<br /><span class="main__hero--presentation-do"
+              >Y yo construyo sitios web.</span
+            >
+          </p>
+          <p class="main__hero--info">
+            Soy un
+            <span class="main__hero--info-career">Frontend Developer</span> en
+            constante aprendizaje y evolución de México y me especializo en
+            construir (y ocasionalmente diseñar) sitios web.
+          </p>
+          <div class="main__hero--buttons">
+            <a class="button" href="mailto:brandargel@gmail.com"
+              >Ponerse en contacto</a
+            >
+            <a class="button main__button--cv" href="#">Currículum</a>
+          </div>
+        </section>
+        <section class="main__about">
+          <div class="main__about--info">
+            <h2 class="main__about--title">Sobre mí</h2>
+            <p>
+              ¡Hola! Soy Brandon Argel, disfruto aprendiendo y creando cosas
+              nuevas todos los días con mis conocimientos.
+            </p>
+            <p>
+              Poco después de graduarme de la Universidad de Guadalajara,
+              comencé mis estudios en Platzi y decidí adoptar su lema:
+            </p>
+            <p class="main__about--info-motto">Nunca pares de aprender</p>
+            <p>
+              Aquí hay algunas tecnologías y herramientas con las que he estado
+              trabajando:
+            </p>
+            <ul class="main__about--skills">
+              <li>JavaScript (ES6+)</li>
+              <li>HTML &S(CSS)</li>
+              <li>Visual Studio Code</li>
+              <li>Git & GitHub</li>
+              <li>Terminal de comandos</li>
+              <li>CodeStream</li>
+            </ul>
+          </div>
+          <div class="main__about--img">
+            <img
+              class="main__about--foto"
+              src="./assets/img/foto.png"
+              alt="Foto de Brandon"
+              height="100px"
+              width="100px"
+            />
+          </div>
+        </section>
+        <h2 class="main__projects--title">Proyectos</h2>
+        <section class="main__projects">
+          <!-- First Project -->
+          <section class="main__projects--project">
+            <div class="main__project--info">
+              <h3 class="main__project--title">Platzi Video</h3>
+              <p class="main__project--description">
+                Proyecto de platzi, sobre el diseño de una aplicación web de
+                videos
+              </p>
+            </div>
+            <div class="main__projects--img">
+              <img
+                src="./assets/img/platzi-video.png"
+                alt="Proyecto Platzi Video"
+              />
+            </div>
+            <div class="main__container--buttons">
+              <a
+                class="project-button"
+                href="https://brandonargel.github.io/Frontend-Developer/"
+                >Ver</a
+              >
+              <a
+                class="project-button"
+                href="https://github.com/BrandonArgel/Frontend-Developer"
+                >Github</a
+              >
+            </div>
+          </section>
+
+          <section class="main__projects--project">
+            <div class="main__project--info">
+              <h3 class="main__project--title">Batatabit</h3>
+              <p class="main__project--description">
+                Proyecto de platzi, empresa de intercambio de criptomonedas
+              </p>
+            </div>
+            <div class="main__projects--img">
+              <img
+                src="./assets/img/batatabit.png"
+                alt="Proyecto Platzi Video"
+              />
+            </div>
+            <div class="main__container--buttons">
+              <a
+                class="project-button"
+                href="https://brandonargel.github.io/ResponsiveDesign/"
+                >Ver</a
+              >
+              <a
+                class="project-button"
+                href="https://github.com/BrandonArgel/ResponsiveDesign"
+                >Github</a
+              >
+            </div>
+          </section>
+        </section>
+        <section class="main__contact">
+          <h2 class="main__contact--title">Contact</h2>
+          <p class="main__contact--info">
+            Actualmente estoy buscando nuevas oportunidades, mi bandeja de
+            entrada está siempre abierta.
+            <br />
+            Si tiene alguna pregunta sobre mis servicios, o simplemente quiere
+            saludarme, no dude en contactarme. A continuación se muestran mis
+            redes sociales y mi correo electrónico:
+          </p>
+        </section>
+        <footer class="footer">
+
+        </footer>
+      </main>
+    </div>
+  </body>
 </html>
