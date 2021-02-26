@@ -2,6 +2,10 @@
     justify-content: space-between;
 }
 
+.header__menu--icon {
+    display: none;
+}
+
 .header__nav {
     display: flex;
     position: relative;

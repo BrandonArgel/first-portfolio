@@ -7,6 +7,7 @@
     --light-couleur: #CCDDFF;
     --couleur: #8899bb;
     --font-mono: monospace;
+    --transition: all 0.30s cubic-bezier(0.700, 0.050, 0.460, 1);
 }
 
 * {
@@ -45,9 +46,19 @@ body {
     height: 100px;
     width: 100%;
     display: flex;
+    position: relative;
 }
 
 .header__logo {
+    margin: 25px;
+}
+
+.header__menu--icon {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
     margin: 25px;
 }
 
@@ -106,6 +117,7 @@ main {
     margin-bottom: 20px;
     font-weight: 300;
     margin-right: 20px;
+    transition: var(--transition);
 }
 
 .main__button--cv {
@@ -156,6 +168,7 @@ main {
 
 .main__about--studies {
     color: var(--couleur-special);
+    text-decoration: none;
 }
 
 .main__about .main__about--info-motto {
@@ -232,7 +245,7 @@ main {
     text-align: center;
     background-color: var(--dark-fond);
     border-radius: 10px;
-
+    transition: var(--transition);
 }
 
 .main__projects--project:hover {
@@ -266,6 +279,7 @@ main {
     margin-bottom: 20px;
     font-weight: 300;
     margin-right: 20px;
+    transition: var(--transition);
 }
 
 .project-button:hover {
@@ -290,50 +304,35 @@ main {
 }
 
 .main__social-networks {
-    display: grid;
+    display: flex;
     margin-bottom: 50px;
-    justify-content: space-around;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "github instagram"
-        "linkedin platzi";
-}
-
-.github,
-.instagram,
-.linkedin,
-.platzi {
-    padding-bottom: 30px;
-    transform: translateY(-5%);
-    transition: all 300ms;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .main__social-networks a {
     display: flex;
     position: relative;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     font-size: 1.6rem;
     color: var(--couleur);
     text-decoration: none;
-    margin: 0 10px;
+    padding: 10px 20px;
+    transition: var(--transition);
 }
 
-.main__social-networks a:hover {
-    color: var(--couleur-special);
-    stroke: var(--couleur-special);
-    display: flex;
-    position: relative;
-    transform: translateY(-5%);
-}
+@media screen and (min-width: 500px) {
+    .main__social--networks-sec {
+        display: flex;
+        flex-direction: row;
+    }
 
-.main__social-networks a:hover svg {
-    color: var(--couleur-special);
-    stroke: var(--couleur-special);
-    display: flex;
-    position: relative;
-    transform: translateY(-5%);
+    .main__about--skills li {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+    }
 }
 
 .main__contact--mail {
@@ -342,27 +341,63 @@ main {
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .main__contact--mail:hover {
     color: var(--couleur-special);
 }
 
-.logo-platzi {
+.main__social-networks a:hover {
+    color: var(--couleur-special);
+    stroke: var(--couleur-special);
+    display: flex;
+    position: relative;
+    padding: 0px 20px 20px 20px;
+}
+
+.logo {
     width: 30px;
     height: 30px;
     margin-top: 20px;
+    transition: var(--transition);
+}
+
+.logo-platzi {
     background: url('../assets/svg/platzi.svg') center/cover no-repeat;
 }
 
 .logo-platzi:hover,
 .main__social-networks a:hover .logo-platzi {
     background: url('../assets/svg/platzi-hover.svg') center/cover no-repeat;
-    transform: translateY(-5%);
 }
 
-svg {
-    transition: 200;
+.logo-instagram {
+    background: url('../assets/svg/Instagram.svg') center/cover no-repeat;
+
+}
+
+.logo-linkedin {
+    background: url('../assets/svg/linkedin.svg') center/cover no-repeat;
+}
+
+.logo-linkedin:hover,
+.main__social-networks a:hover .logo-linkedin {
+    background: url('../assets/svg/linkedin-hover.svg') center/cover no-repeat;
+}
+
+.logo-instagram:hover,
+.main__social-networks a:hover .logo-instagram {
+    background: url('../assets/svg/Instagram-hover.svg') center/cover no-repeat;
+}
+
+.logo-github {
+    background: url('../assets/svg/Github.svg') center/cover no-repeat;
+}
+
+.logo-github:hover,
+.main__social-networks a:hover .logo-github {
+    background: url('../assets/svg/Github-hover.svg') center/cover no-repeat;
 }
 
 .footer {
@@ -375,3 +410,4 @@ svg {
     color: var(--couleur);
     font-size: 1.4rem;
 }
+
