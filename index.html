@@ -27,23 +27,40 @@
   </head>
   <body>
     <div class="content">
-      <header class="header">
+      <header id="header" class="header">
         <div class="header__logo">
           <img src="./assets/svg/logo.svg" alt="Logo" height="50" width="50" />
           <!-- <a class="header__menu--icon" href="#">
             <img src="./assets/svg/menu.svg" alt="Ícono de Hamburguesa" />
           </a> -->
         </div>
-        <div class="header__nav">
+        <div id="nav" class="header__nav">
           <nav>
             <ul>
-              <li><a href="#main__about">Sobre mí</a></li>
-              <li><a href="#main__projects--title">Proyectos</a></li>
-              <li><a href="#main__contact">Contacto</a></li>
+              <li>
+                <a href="#main__about" class="about">Sobre mí</a>
+              </li>
+              <li>
+                <a href="#main__projects--title" class="projects"
+                  >Proyectos</a
+                >
+              </li>
+              <li>
+                <a href="#main__contact" class="contact">Contacto</a>
+              </li>
             </ul>
           </nav>
         </div>
       </header>
+      <!-- <div class="aside">
+        <aside>
+          <ul>
+            <li><a href="#main__about">Sobre mí</a></li>
+            <li><a href="#main__projects--title">Proyectos</a></li>
+            <li><a href="#main__contact">Contacto</a></li>
+          </ul>
+        </aside>
+      </div> -->
       <main>
         <section class="main__hero">
           <h1 class="main__hero--title">Hola, mi nombre es</h1>
@@ -208,7 +225,7 @@
               </a>
             </div>
             <div class="main__social--networks-sec">
-              <a href="https://www.linkedin.com/brandargel/">
+              <a href="https://www.linkedin.com/in/brandargel/">
                 <p>Linkedin</p>
                 <div class="logo logo-linkedin"></div>
               </a>
@@ -224,5 +241,7 @@
         </footer>
       </main>
     </div>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
