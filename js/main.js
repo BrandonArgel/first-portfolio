@@ -42,3 +42,6 @@ window.onscroll = function () {
   }
   scroll = desplazamiento_actual;
 };
+
+var img = new Image();
+img.src = '../assets/svg/close.svg';
