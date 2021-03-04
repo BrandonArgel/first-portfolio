@@ -2,10 +2,12 @@
 const btnToggle = document.querySelector(".header__menu--icon");
 btnToggle.addEventListener("click", function () {
   document.getElementById("aside").classList.toggle("active");
+  document.getElementById("main").classList.toggle("opacity");
   document
     .getElementById("btn-toggle")
     .classList.toggle("header__menu--close-icon");
 });
+
 // Cerrar panel haciendo click en el main
 const panelToggle = document.querySelector("main");
 panelToggle.addEventListener("click", function () {
@@ -39,3 +41,20 @@ window.onscroll = function () {
   }
   scroll = desplazamiento_actual;
 };
+
+// Mostrar elementos
+let animado = document.querySelectorAll(".animado");
+
+function mostrarScroll() {
+  let scrollTop = document.documentElement.scrollTop;
+  for (var i = 0; i < animado.length; i++) {
+    let alturaAnimado = animado[i].offsetTop;
+    if (alturaAnimado - 500 < scrollTop) {
+      animado[i].style.opacity = 1;
+      animado[i].classList.add("mostrarIzquierda");
+      animado[i].classList.add("mostrarDerecha");
+    }
+  }
+}
+
+window.addEventListener("scroll", mostrarScroll);

@@ -47,7 +47,7 @@ body {
     position: fixed;
     top: 0;
     transition: var(--transition);
-    background-color: rgba(13,20,38, 0.95);
+    background-color: rgba(13, 20, 38, 0.95);
     backdrop-filter: blur(10px);
     z-index: 1;
 }
@@ -169,7 +169,7 @@ main {
 }
 
 .main__about .main__about--info-motto {
-    background-color: rgba(34,39 ,107 , 0.4);
+    background-color: rgba(34, 39, 107, 0.4);
     color: var(--light-couleurcouleur);
     border-radius: 10px;
     padding: 20px;
@@ -401,4 +401,41 @@ main {
 .footer--info {
     color: var(--couleur);
     font-size: 1.4rem;
+}
+
+.opacity {
+    filter: blur(4px);
+}
+
+.animado {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.mostrarDerecha {
+    animation: mostrarDerecha 1s;
+}
+
+.mostrarIzquierda {
+    animation: mostrarIzquierda 1s;
+}
+
+@keyframes mostrarIzquierda {
+    0% {
+        transform: translateX(-100px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes mostrarDerecha {
+    0% {
+        transform: translateX(100px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
 }
