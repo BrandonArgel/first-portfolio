@@ -13,6 +13,7 @@ const panelToggle = document.querySelector("main");
 panelToggle.addEventListener("click", function () {
   if (document.getElementById("aside").classList.contains("active")) {
     document.getElementById("aside").classList.toggle("active");
+    document.getElementById("main").classList.toggle("opacity");
     document
       .getElementById("btn-toggle")
       .classList.remove("header__menu--close-icon");
