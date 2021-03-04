@@ -2,7 +2,8 @@
     justify-content: space-between;
 }
 
-.header__menu--icon, .aside {
+.header__menu--icon,
+.aside {
     display: none;
 }
 
@@ -15,21 +16,22 @@
 .header__nav nav {
     display: flex;
     position: relative;
-    top: 40px;
     flex-direction: row;
 }
 
 .header__nav nav ul {
     display: flex;
-    position: relative;
-    font-weight: normal;
-    font-size: 2rem;
 }
 
 .header__nav nav ul li {
-    margin-left: 60px;
+    display: flex;
     list-style: none;
-    width: 100px;
+    padding: 5px;
+    margin: 0 20px;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
 }
 
 .header__nav nav ul li a {
@@ -39,6 +41,10 @@
 
 .header__nav nav ul li a:hover {
     color: var(--couleur-special);
+}
+
+.header__invisible {
+    width: 100px;
 }
 
 main {
@@ -56,7 +62,8 @@ main {
 
 .main__about {
     width: 100%;
-    display: flex;
+    display: grid;
+    flex-wrap: wrap;
 }
 
 .main__about--title,
@@ -76,14 +83,26 @@ main {
     position: relative;
     top: -11px;
     left: 170px;
-    width: 75%;
+    width: 70%;
     height: .5px;
     margin-left: 20px;
     background-color: var(--couleur);
 }
 
 .main__about--title::after {
-    width: 145%;
+    width: 370%;
+}
+
+@media screen and (min-width:1240px) {
+    .main__about--title::after {
+        width: 540%;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .main__about--title::after {
+        width: 640%;
+    }
 }
 
 .main__about--skills li {
@@ -93,15 +112,26 @@ main {
     line-height: 1.5rem;
 }
 
-.main__about--img {
+.main__about--container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    margin-right: 50px;
+}
+
+.main__about--info {
     display: flex;
-    position: relative;
-    top: 115px;
-    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.main__about--img {
+    width: 300px;
     min-width: 300px;
     min-height: 300px;
+    max-width: 500px;
+    max-height: 500px;
     border-radius: 5px;
-    margin: 0 0 320px 50px;
+    margin: 100px auto;
     background: url('../assets/img/foto.png') center/cover no-repeat;
 }
 

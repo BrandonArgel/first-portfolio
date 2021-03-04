@@ -25,6 +25,10 @@ html::-webkit-scrollbar {
     width: 12px;
 }
 
+html::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
 html::-webkit-scrollbar-thumb {
     background: linear-gradient(180deg, rgba(22, 255, 226, 0.6) 0%, rgba(22, 255, 226, .5) 25%, rgba(22, 255, 226, 1) 53%, rgba(22, 255, 226, .5) 75%, rgba(22, 255, 226, 0.6) 100%);
     border-radius: 20px;
@@ -149,7 +153,7 @@ main {
     position: relative;
     top: -11px;
     left: 100px;
-    width: 60%;
+    width: 50%;
     height: .5px;
     margin-left: 20px;
     background-color: var(--couleur);
@@ -173,11 +177,12 @@ main {
     color: var(--light-couleurcouleur);
     border-radius: 10px;
     padding: 20px;
-    max-width: 350px;
+    min-width: 350px;
+    height: 60px;
 }
 
-.main__about--info {
-    max-width: 600px;
+.main__about--container {
+    width: 100%;
 }
 
 .main__about--info-motto::before {
@@ -213,7 +218,6 @@ main {
     height: 200px;
     max-width: 300px;
     max-width: 300px;
-    padding-bottom: 100px;
     background: url('../assets/img/foto.png') center/cover no-repeat;
 }
 
