@@ -2,7 +2,7 @@
     justify-content: space-between;
 }
 
-.header__menu--icon {
+.header__menu--icon, .aside {
     display: none;
 }
 

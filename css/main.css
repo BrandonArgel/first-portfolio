@@ -50,25 +50,17 @@ body {
     transition: var(--transition);
     background-color: rgba(0, 32, 64, 0.90);
     backdrop-filter: blur(10px);
+    z-index: 1;
+}
+
+.header__invisible {
+    position: relative;
+    width: inherit;
     z-index: 11;
 }
 
-.header__logo {
+.header-logo {
     margin: 25px;
-}
-
-.header__menu--icon {
-    display: flex;
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 5px;
-    margin: 25px;
-    z-index: 100;
-}
-
-.header__nav {
-    display: none;
 }
 
 main {
@@ -283,6 +275,7 @@ main {
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 20px;
+    margin-left: 20px;
     font-weight: 300;
     margin-right: 20px;
     transition: var(--transition);
@@ -328,31 +321,6 @@ main {
     padding: 10px 20px;
     transition: var(--transition);
 }
-
-@media screen and (min-width: 500px) {
-    .main__social--networks-sec {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .main__about--skills li {
-        font-size: 1.6rem;
-        line-height: 1.8rem;
-    }
-}
-
-/* @media screen and (max-width: 777px) {
-    .aside {
-        display: flex;
-        position: fixed;
-        height: 100vh;
-        width: 80%;
-        top: 0;
-        right: 0;
-        background-color: red;
-        transition: none;
-    }
-} */
 
 .main__contact--mail {
     text-decoration: none;

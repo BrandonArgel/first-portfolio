@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link
       rel="stylesheet"
+      href="./css/smartphone.css"
+      media="(max-width: 777px)"
+    />
+    <link
+      rel="stylesheet"
       href="./css/desktop.css"
       media="(min-width: 777px)"
     />
@@ -28,11 +33,16 @@
   <body>
     <div class="content">
       <header id="header" class="header">
-        <div class="header__logo">
-          <img src="./assets/svg/logo.svg" alt="Logo" height="50" width="50" />
-          <!-- <a class="header__menu--icon" href="#">
-            <img src="./assets/svg/menu.svg" alt="Ícono de Hamburguesa" />
-          </a> -->
+        <div class="header__invisible">
+          <img
+            class="header-logo"
+            src="./assets/svg/logo.svg"
+            alt="Logo"
+            height="50"
+            width="50"
+          />
+          <div id="btn-toggle" class="header__menu--icon">
+          </div>
         </div>
         <div id="nav" class="header__nav">
           <nav>
@@ -41,9 +51,7 @@
                 <a href="#main__about" class="about">Sobre mí</a>
               </li>
               <li>
-                <a href="#main__projects--title" class="projects"
-                  >Proyectos</a
-                >
+                <a href="#main__projects--title" class="projects">Proyectos</a>
               </li>
               <li>
                 <a href="#main__contact" class="contact">Contacto</a>
@@ -51,16 +59,23 @@
             </ul>
           </nav>
         </div>
+        <div id="aside" class="aside">
+          <aside>
+            <ul>
+              <li>
+                <a href="#main__about" class="about">Sobre mí</a>
+              </li>
+              <li>
+                <a href="#main__projects--title" class="projects">Proyectos</a>
+              </li>
+              <li>
+                <a href="#main__contact" class="contact">Contacto</a>
+              </li>
+            </ul>
+          </aside>
+        </div>
       </header>
-      <!-- <div class="aside">
-        <aside>
-          <ul>
-            <li><a href="#main__about">Sobre mí</a></li>
-            <li><a href="#main__projects--title">Proyectos</a></li>
-            <li><a href="#main__contact">Contacto</a></li>
-          </ul>
-        </aside>
-      </div> -->
+
       <main>
         <section class="main__hero">
           <h1 class="main__hero--title">Hola, mi nombre es</h1>
