@@ -1,11 +1,10 @@
 :root {
-    --dark-fond: #000F2a;
-    --fond: #002040;
-    --light-fond: #002050;
-    --lightest-fond: #112360;
-    --couleur-special: #77FFEE;
+    --dark-fond: #0D1416;
+    --fond: #0D1426;
+    --light-fond: #0D1436;
+    --couleur-special: #16FFE2;
     --light-couleur: #CCDDFF;
-    --couleur: #8899bb;
+    --couleur: #99aacc;
     --font-mono: monospace;
     --transition: all 0.30s cubic-bezier(0.700, 0.050, 0.460, 1);
 }
@@ -27,12 +26,12 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, rgba(119, 255, 255, 0.6) 0%, rgba(119, 255, 255, .5) 25%, rgba(119, 255, 255, 1) 53%, rgba(119, 255, 255, .5) 75%, rgba(119, 255, 255, 0.6) 100%);
+    background: linear-gradient(180deg, rgba(22, 255, 226, 0.6) 0%, rgba(22, 255, 226, .5) 25%, rgba(22, 255, 226, 1) 53%, rgba(22, 255, 226, .5) 75%, rgba(22, 255, 226, 0.6) 100%);
     border-radius: 20px;
 }
 
 html::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(119, 255, 255, 0.8);
+    background-color: rgba(22, 255, 226, 0.8);
 }
 
 
@@ -48,7 +47,7 @@ body {
     position: fixed;
     top: 0;
     transition: var(--transition);
-    background-color: rgba(0, 32, 64, 0.90);
+    background-color: rgba(13,20,38, 0.95);
     backdrop-filter: blur(10px);
     z-index: 1;
 }
@@ -170,8 +169,8 @@ main {
 }
 
 .main__about .main__about--info-motto {
-    background-color: #ffffff22;
-    color: var(--light-couleur);
+    background-color: rgba(34,39 ,107 , 0.4);
+    color: var(--light-couleurcouleur);
     border-radius: 10px;
     padding: 20px;
     max-width: 350px;
@@ -248,6 +247,12 @@ main {
 
 .main__projects--project:hover {
     opacity: 1;
+    margin-top: -10px;
+    box-shadow: 0px 0px 30px 5px rgba(22, 255, 226, 0.1);
+}
+
+.main__projects--project:hover .main__project--title {
+    color: var(--couleur-special);
 }
 
 .main__project--title {

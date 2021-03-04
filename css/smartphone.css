@@ -35,11 +35,13 @@
     display: flex;
     position: fixed;
     height: 100vh;
-    width: 75vw;
+    width: 70vw;
     top: 0;
     right: -100%;
-    background-color: var(--light-fond);
+    background: rgb(13, 20, 38);
+    background: linear-gradient(90deg, rgba(13, 20, 38, 1) 0%, rgba(13, 20, 54, 1) 100%);
     transition: var(--transition);
+    box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.80);
 }
 
 .aside aside {
@@ -60,6 +62,14 @@
 
 .aside aside ul li {
     border-bottom: 1px solid var(--couleur);
+}
+
+.aside aside ul li:hover {
+    background: rgba(13, 100, 255, 0.1);
+}
+
+.aside aside ul li:hover a {
+    color: var(--couleur-special);
 }
 
 .aside aside ul li a {

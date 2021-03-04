@@ -1,9 +1,9 @@
 <svg width="50" height="48" viewBox="0 0 50 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d)">
-<line x1="5.93934" y1="38.7089" x2="42.7089" y2="1.93932" stroke="#77FFFF" stroke-width="3"/>
+<line x1="5.93934" y1="38.7089" x2="42.7089" y2="1.93932" stroke="#16FFE2" stroke-width="3"/>
 </g>
 <g filter="url(#filter1_d)">
-<line x1="8.06066" y1="1.93934" x2="44.8302" y2="38.7089" stroke="#77FFFF" stroke-width="3"/>
+<line x1="8.06066" y1="1.93934" x2="44.8302" y2="38.7089" stroke="#16FFE2" stroke-width="3"/>
 </g>
 <defs>
 <filter id="filter0_d" x="0.878662" y="0.878662" width="46.8909" height="46.8909" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
