@@ -190,7 +190,7 @@ main {
 
 .main__about--skills {
     display: grid;
-    grid-template-columns: repeat(2, minmax(140px, 200px));
+    grid-template-columns: repeat(2, minmax(250px, 300px));
     margin: 20px 0;
     list-style: none;
 }

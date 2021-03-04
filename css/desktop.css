@@ -29,6 +29,7 @@
 .header__nav nav ul li {
     margin-left: 60px;
     list-style: none;
+    width: 100px;
 }
 
 .header__nav nav ul li a {
@@ -87,7 +88,8 @@ main {
 
 .main__about--skills li {
     color: var(--couleur);
-    font-size: 1.3rem;
+    margin-left: 20px;
+    font-size: 1.6rem;
     line-height: 1.5rem;
 }
 
@@ -106,8 +108,13 @@ main {
 
 .main__social-networks {
     display: flex;
-    margin: 0 10px 50px;
     justify-content: center;
+    flex-direction: row;
+}
+
+.main__social--networks-sec {
+    display: flex;
+    flex-direction: row;
 }
 
 svg {

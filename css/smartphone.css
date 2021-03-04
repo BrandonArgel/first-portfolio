@@ -73,3 +73,10 @@
 .active {
     right: 0;
 }
+
+.main__about--skills {
+    display: flex;
+    margin: 20px 0;
+    list-style: none;
+    flex-direction: column;
+}
