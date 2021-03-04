@@ -10,6 +10,13 @@
     }
 }
 
+@media screen and (max-width: 370px) {
+    #aside {
+        height: 120vh;
+        top: -10vh;
+    }
+}
+
 .header__menu--icon {
     display: flex;
     position: absolute;
@@ -25,6 +32,7 @@
 .header__menu--close-icon {
     background: url('../assets/svg/close.svg')center/cover no-repeat;
     transform: rotate(360deg);
+    visibility: visible;
 }
 
 .header__nav {
