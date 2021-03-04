@@ -177,7 +177,7 @@ main {
     color: var(--light-couleurcouleur);
     border-radius: 10px;
     padding: 20px;
-    min-width: 350px;
+    min-width: 300px;
     height: 60px;
 }
 
