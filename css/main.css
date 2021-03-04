@@ -248,7 +248,7 @@ main {
 .main__projects--project:hover {
     opacity: 1;
     margin-top: -10px;
-    box-shadow: 0px 0px 30px 5px rgba(22, 255, 226, 0.1);
+    box-shadow: 0px 0px 30px 5px rgba(22, 255, 226, 0.05);
 }
 
 .main__projects--project:hover .main__project--title {
