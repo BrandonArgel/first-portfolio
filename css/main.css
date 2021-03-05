@@ -132,7 +132,7 @@ main {
 }
 
 .main__about {
-    margin-top: 100px;
+    padding-top: 100px;
     width: 100%;
 }
 
@@ -227,13 +227,13 @@ main {
     width: 100%;
     justify-content: space-between;
     border-radius: 5px;
-    margin-bottom: 150px;
 }
 
 .main__projects--title {
     font-size: 2rem;
     margin-bottom: 20px;
     font-weight: bold;
+    padding-top: 150px;
 }
 
 .main__projects--project {
@@ -304,6 +304,10 @@ main {
 .main__projects--img img {
     width: 100%;
     margin-bottom: 20px;
+}
+
+.main__contact {
+    padding-top: 100px;
 }
 
 .main__contact--info {
