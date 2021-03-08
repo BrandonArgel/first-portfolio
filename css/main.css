@@ -72,11 +72,6 @@ main {
     font-family: var(--font-mono);
 }
 
-/* main section {
-    background-color: var(--fond);
-    border-radius: 15px;
-}
- */
 .main__hero {
     margin-bottom: 100px;
 }
@@ -236,6 +231,7 @@ main {
     position: fixed;
     z-index: -1;
     left: 0;
+    top: 0;
 }
 
 .main__projects {
