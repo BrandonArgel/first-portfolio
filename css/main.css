@@ -72,6 +72,15 @@ main {
     font-family: var(--font-mono);
 }
 
+/* main section {
+    background-color: var(--fond);
+    border-radius: 15px;
+}
+ */
+.main__hero {
+    margin-bottom: 100px;
+}
+
 .main__hero .main__hero--title {
     color: var(--couleur-special);
     font-size: 1.6rem;
@@ -221,6 +230,14 @@ main {
     background: url('../assets/img/foto.png') center/cover no-repeat;
 }
 
+#particles-js {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    left: 0;
+}
+
 .main__projects {
     display: flex;
     flex-direction: column;
@@ -241,7 +258,7 @@ main {
     grid-template-columns: repeat(1, 1fr);
     padding: 20px;
     text-overflow: wrap;
-    opacity: 0.6;
+    opacity: 0.85;
     margin-bottom: 40px;
     text-align: center;
     background-color: var(--dark-fond);

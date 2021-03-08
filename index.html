@@ -11,7 +11,7 @@
     <meta name="robots" content="index, follow" />
     <meta name="keywords" content="Brandon Argel Verdeja Domínguez" />
     <title>Brandon Argel</title>
-    <link rel="preload" href="./css/main.css" as="style">
+    <link rel="preload" href="./css/main.css" as="style" />
     <link rel="stylesheet" href="./css/main.css" />
     <link
       rel="stylesheet"
@@ -78,6 +78,7 @@
 
       <main id="main">
         <section class="main__hero">
+          <div class="particles-js" id="particles-js"></div>
           <h1 class="main__hero--title">Hola, mi nombre es</h1>
           <p class="main__hero--presentation">
             Brandon Argel.<br /><span class="main__hero--presentation-do"
@@ -87,8 +88,9 @@
           <p class="main__hero--info">
             Soy un
             <span class="main__hero--info-career">Frontend Developer</span> en
-            constante aprendizaje y evolución que vive en la ciudad de Guadalajara, México y me especializo
-            en construir (y ocasionalmente diseñar) sitios web.
+            constante aprendizaje y evolución que vive en la ciudad de
+            Guadalajara, México y me especializo en construir (y ocasionalmente
+            diseñar) sitios web.
           </p>
           <div class="main__hero--buttons">
             <a class="button" href="mailto:brandargel@gmail.com"
@@ -102,9 +104,9 @@
             <div class="main__about--info">
               <h2 class="main__about--title">Sobre mí</h2>
               <p>
-                ¡Hola! Soy Brandon Argel, actualmente vivo en Guadalajara, México, tengo 18
-                años de edad y disfruto aprendiendo y creando cosas nuevas todos
-                los días.
+                ¡Hola! Soy Brandon Argel, actualmente vivo en Guadalajara,
+                México, tengo 18 años de edad y disfruto aprendiendo y creando
+                cosas nuevas todos los días.
               </p>
               <p>
                 Poco antes de graduarme de la
@@ -160,6 +162,7 @@
               >
               <a
                 class="project-button"
+                target="_blank"
                 href="https://github.com/BrandonArgel/Frontend-Developer"
                 >Github</a
               >
@@ -182,11 +185,13 @@
             <div class="main__container--buttons">
               <a
                 class="project-button"
+                target="_blank"
                 href="https://brandonargel.github.io/ResponsiveDesign/"
                 >Ver</a
               >
               <a
                 class="project-button"
+                target="_blank"
                 href="https://github.com/BrandonArgel/ResponsiveDesign"
                 >Github</a
               >
@@ -209,6 +214,7 @@
             <div class="main__container--buttons">
               <a
                 class="project-button"
+                target="_blank"
                 href="https://github.com/BrandonArgel/BrandonArgel.github.io"
                 >Github</a
               >
@@ -232,21 +238,24 @@
           >
           <div class="main__social-networks">
             <div class="main__social--networks-sec">
-              <a href="https://github.com/BrandonArgel">
+              <a target="_blank" href="https://github.com/BrandonArgel">
                 <p>Github</p>
                 <div class="logo logo-github"></div>
               </a>
-              <a href="https://www.instagram.com/brandargel/">
+              <a target="_blank" href="https://www.instagram.com/brandargel/">
                 <p>Instagram</p>
                 <div class="logo logo-instagram"></div>
               </a>
             </div>
             <div class="main__social--networks-sec">
-              <a href="https://www.linkedin.com/in/brandargel/">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/brandargel/"
+              >
                 <p>Linkedin</p>
                 <div class="logo logo-linkedin"></div>
               </a>
-              <a href="https://platzi.com/p/BrandArgel/">
+              <a target="_blank" href="https://platzi.com/p/BrandArgel/">
                 <p>Platzi</p>
                 <div class="logo logo-platzi"></div>
               </a>
@@ -260,6 +269,8 @@
     </div>
     <div id="preload-01"></div>
 
+    <script src="./js/particles.min.js"></script>
+    <script src="./js/app.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
