@@ -30,18 +30,25 @@ window.onscroll = function () {
     if (window.pageYOffset > 0) {
       this.document.getElementById("header").style.boxShadow =
         "0px 0px 50px 10px rgba(0,0,0,0.80)";
+      this.document.getElementById("header").style.backgroundColor =
+        "rgba(13, 20, 38, .90)";
+      document.getElementById("header").classList.add("filter");
     } else if (window.pageYOffset == 0) {
       this.document.getElementById("header").style.boxShadow = "none";
+      this.document.getElementById("header").style.background = "transparent";
+      document.getElementById("header").classList.remove("filter");
     }
   } else if (document.getElementById("aside").classList.contains("active")) {
     this.document.getElementById("header").style.top = "0";
+    document.getElementById("header").classList.add("filter");
   } else {
     document.getElementById("header").style.top = "-100px";
     document.getElementById("aside").style.top = "100px";
     this.document.getElementById("header").style.boxShadow = "none";
+    document.getElementById("header").classList.add("filter");
   }
   scroll = desplazamiento_actual;
 };
 
 var img = new Image();
-img.src = '../assets/svg/close.svg';
+img.src = "../assets/svg/close.svg";

@@ -51,9 +51,12 @@ body {
     position: fixed;
     top: 0;
     transition: var(--transition);
-    background-color: rgba(13, 20, 38, 0.95);
-    backdrop-filter: blur(10px);
+    background-color: transparent;
     z-index: 1;
+}
+
+.filter {
+    backdrop-filter: blur(10px);
 }
 
 .header__invisible {
