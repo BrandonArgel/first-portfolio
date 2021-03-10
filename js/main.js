@@ -3,6 +3,7 @@ const btnToggle = document.querySelector(".header__menu--icon");
 btnToggle.addEventListener("click", function () {
   document.getElementById("aside").classList.toggle("active");
   document.getElementById("main").classList.toggle("opacity");
+  document.getElementById("particles-js").classList.toggle("opacity");
   document
     .getElementById("btn-toggle")
     .classList.toggle("header__menu--close-icon");
@@ -14,6 +15,7 @@ panelToggle.addEventListener("click", function () {
   if (document.getElementById("aside").classList.contains("active")) {
     document.getElementById("aside").classList.toggle("active");
     document.getElementById("main").classList.toggle("opacity");
+    document.getElementById("particles-js").classList.toggle("opacity");
     document
       .getElementById("btn-toggle")
       .classList.remove("header__menu--close-icon");
@@ -28,10 +30,6 @@ window.onscroll = function () {
     this.document.getElementById("header").style.top = "0";
     this.document.getElementById("aside").style.top = "0";
     if (window.pageYOffset > 0) {
-      this.document.getElementById("header").style.boxShadow =
-        "0px 0px 50px 10px rgba(0,0,0,0.80)";
-      this.document.getElementById("header").style.backgroundColor =
-        "rgba(13, 20, 38, .90)";
       document.getElementById("header").classList.add("filter");
     } else if (window.pageYOffset == 0) {
       this.document.getElementById("header").style.boxShadow = "none";
