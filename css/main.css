@@ -344,6 +344,7 @@ main {
     margin-bottom: 50px;
     justify-content: center;
     flex-wrap: wrap;
+    height: 150px;
 }
 
 .main__social-networks a {
@@ -353,6 +354,7 @@ main {
     justify-content: center;
     align-items: center;
     font-size: 1.6rem;
+    line-height: 2rem;
     color: var(--couleur);
     text-decoration: none;
     padding: 10px 20px;
@@ -378,6 +380,7 @@ main {
     position: relative;
     padding: 0px 20px 20px 20px;
     font-size: 2rem;
+    line-height: 2rem;
 }
 
 .logo {
@@ -388,23 +391,39 @@ main {
 }
 
 .main__social-networks a:hover .logo {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 }
 
 .logo-platzi {
-    background: url('../assets/svg/platzi-hover.svg') center/cover no-repeat;
+    background: url('../assets/svg/platzi.svg') center/cover no-repeat;
 }
 
 .logo-instagram {
-    background: url('../assets/svg/Instagram-hover.svg') center/cover no-repeat;
+    background: url('../assets/svg/Instagram.svg') center/cover no-repeat;
 }
 
 .logo-linkedin {
-    background: url('../assets/svg/Linkedin-hover.svg') center/cover no-repeat;
+    background: url('../assets/svg/Linkedin.svg') center/cover no-repeat;
 }
 
 .logo-github {
+    background: url('../assets/svg/Github.svg') center/cover no-repeat;
+}
+
+.main__social-networks a:hover .logo-platzi {
+    background: url('../assets/svg/platzi-hover.svg') center/cover no-repeat;
+}
+
+.main__social-networks a:hover .logo-instagram {
+    background: url('../assets/svg/Instagram-hover.svg') center/cover no-repeat;
+}
+
+.main__social-networks a:hover .logo-linkedin {
+    background: url('../assets/svg/Linkedin-hover.svg') center/cover no-repeat;
+}
+
+.main__social-networks a:hover .logo-github {
     background: url('../assets/svg/Github-hover.svg') center/cover no-repeat;
 }
 
