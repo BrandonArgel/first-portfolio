@@ -37,10 +37,12 @@
 .header__nav nav ul li a {
     color: var(--light-couleur);
     text-decoration: none;
+    padding: 5px;
 }
 
-.header__nav nav ul li a:hover {
+.header__nav nav ul li a:hover, .header__nav nav ul li a:focus{
     color: var(--couleur-special);
+    outline-color: var(--couleur-special);
 }
 
 .header__invisible {
