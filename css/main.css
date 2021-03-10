@@ -441,11 +441,11 @@ main {
 .opacity {
     filter: blur(4px);
 }
-
+/* 
 #preload-01 {
     background: url('../assets/svg/close.svg') no-repeat -9999px -9999px;
     background: url('../assets/svg/Github-hover.svg') no-repeat -9999px -9999px;
     background: url('../assets/svg/platzi-hover.svg') no-repeat -9999px -9999px;
     background: url('../assets/svg/Instagram-hover.svg') no-repeat -9999px -9999px;
     background: url('../assets/svg/Linkedin-hover.svg') no-repeat -9999px -9999px;
-}
+} */
