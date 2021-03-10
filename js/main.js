@@ -47,10 +47,3 @@ window.onscroll = function () {
   }
   scroll = desplazamiento_actual;
 };
-
-var img = new Image();
-img.src = "../assets/svg/close.svg";
-img.src = "../assets/svg/Github-hover.svg";
-img.src = "../assets/svg/platzi-hover.svg";
-img.src = "../assets/svg/Instagram-hover.svg";
-img.src = "../assets/svg/Linkedin-hover.svg.svg";
