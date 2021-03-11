@@ -27,6 +27,8 @@ let scroll = window.pageYOffset;
 window.onscroll = function () {
   let desplazamiento_actual = window.pageYOffset;
   if (window.pageYOffset > 0) {
+    this.document.getElementById("header").style.background = "rgba(13, 20, 38, .95)";
+    this.document.getElementById("header").style.boxShadow = "rgba(0, 0, 0, 0.80)";
     document.getElementById("header").classList.add("filter");
   } else if (window.pageYOffset == 0) {
     this.document.getElementById("header").style.boxShadow = "none";
