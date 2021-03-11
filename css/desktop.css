@@ -10,7 +10,7 @@
 .header__nav {
     display: flex;
     position: relative;
-    right: 100px;
+    right: 10px;
 }
 
 .header__nav nav {
