@@ -50,9 +50,9 @@ body {
     display: flex;
     position: fixed;
     top: 0;
-    transition: var(--transition);
+    transition: all .15s cubic-bezier(0.700, 0.050, 0.460, 1);
     background-color: transparent;
-    z-index: 10;
+    z-index: 1;
 }
 
 .filter {
@@ -62,7 +62,7 @@ body {
 .header__invisible {
     position: relative;
     width: inherit;
-    z-index: 20;
+    z-index: 10;
 }
 
 .header-logo {
@@ -458,10 +458,4 @@ main {
 
 #preload-05 {
     background: url('../assets/svg/Linkedin-hover.svg') no-repeat -9999px -9999px;
-}
-
-#main {
-    display: flex;
-    position: absolute;
-    flex-direction: column;
 }
