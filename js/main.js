@@ -30,7 +30,7 @@ window.onscroll = function () {
     this.document.getElementById("header").style.background =
       "rgba(13, 20, 38, .95)";
     this.document.getElementById("header").style.boxShadow =
-      "rgba(0, 0, 0, 0.80)";
+      "0px 0px 50px 10px rgba(0, 0, 0, 0.80)";
     document.getElementById("header").classList.add("filter");
   } else if (window.pageYOffset == 0) {
     this.document.getElementById("header").style.boxShadow = "none";

@@ -52,7 +52,7 @@ body {
     top: 0;
     transition: var(--transition);
     background-color: transparent;
-    z-index: 1;
+    z-index: 10;
 }
 
 .filter {
@@ -62,7 +62,7 @@ body {
 .header__invisible {
     position: relative;
     width: inherit;
-    z-index: 11;
+    z-index: 20;
 }
 
 .header-logo {
@@ -458,4 +458,10 @@ main {
 
 #preload-05 {
     background: url('../assets/svg/Linkedin-hover.svg') no-repeat -9999px -9999px;
+}
+
+#main {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
 }
