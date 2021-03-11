@@ -37,7 +37,7 @@ function aClose() {
       .getElementById("btn-toggle")
       .classList.remove("header__menu--close-icon");
   }
-  },600)
+  },100)
 }
 
 // Ocultar Header
