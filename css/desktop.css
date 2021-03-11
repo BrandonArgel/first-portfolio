@@ -92,7 +92,7 @@ main {
 }
 
 .main__about--title::after {
-    width: 370%;
+    width: 340%;
 }
 
 @media screen and (min-width:1240px) {
