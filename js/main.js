@@ -26,24 +26,12 @@ panelToggle.addEventListener("click", function () {
 let scroll = window.pageYOffset;
 window.onscroll = function () {
   let desplazamiento_actual = window.pageYOffset;
-  if (scroll >= desplazamiento_actual) {
-    this.document.getElementById("header").style.top = "0";
-    this.document.getElementById("aside").style.top = "0";
-    if (window.pageYOffset > 0) {
-      document.getElementById("header").classList.add("filter");
-    } else if (window.pageYOffset == 0) {
-      this.document.getElementById("header").style.boxShadow = "none";
-      this.document.getElementById("header").style.background = "transparent";
-      document.getElementById("header").classList.remove("filter");
-    }
-  } else if (document.getElementById("aside").classList.contains("active")) {
-    this.document.getElementById("header").style.top = "0";
+  if (window.pageYOffset > 0) {
     document.getElementById("header").classList.add("filter");
-  } else {
-    document.getElementById("header").style.top = "-100px";
-    document.getElementById("aside").style.top = "100px";
+  } else if (window.pageYOffset == 0) {
     this.document.getElementById("header").style.boxShadow = "none";
-    document.getElementById("header").classList.add("filter");
+    this.document.getElementById("header").style.background = "transparent";
+    document.getElementById("header").classList.remove("filter");
   }
   scroll = desplazamiento_actual;
 };

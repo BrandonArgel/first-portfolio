@@ -130,7 +130,8 @@ main {
     transition: var(--transition);
 }
 
-.button:hover, .button:focus {
+.button:hover,
+.button:focus {
     background-color: var(--couleur-special);
     color: #000F20;
     font-weight: bold;
@@ -310,7 +311,8 @@ main {
     height: 40px;
 }
 
-.project-button:hover, .project-button:focus {
+.project-button:hover,
+.project-button:focus {
     background-color: var(--couleur-special);
     color: #000F20;
     font-weight: bold;
@@ -366,11 +368,13 @@ main {
     margin-bottom: 50px;
 }
 
-.main__contact--mail:hover, .main__contact--mail:focus {
+.main__contact--mail:hover,
+.main__contact--mail:focus {
     color: var(--couleur-special);
 }
 
-.main__social-networks a:hover, .main__social-networks a:focus {
+.main__social-networks a:hover,
+.main__social-networks a:focus {
     color: var(--couleur-special);
     display: flex;
     position: relative;
@@ -386,7 +390,8 @@ main {
     transition: var(--transition);
 }
 
-.main__social-networks a:hover .logo, .main__social-networks a:focus .logo {
+.main__social-networks a:hover .logo,
+.main__social-networks a:focus .logo {
     width: 50px;
     height: 50px;
 }
@@ -407,19 +412,23 @@ main {
     background: url('../assets/svg/Github.svg') center/cover no-repeat;
 }
 
-.main__social-networks a:hover .logo-platzi, .main__social-networks a:focus .logo-platzi {
+.main__social-networks a:hover .logo-platzi,
+.main__social-networks a:focus .logo-platzi {
     background: url('../assets/svg/platzi-hover.svg') center/cover no-repeat;
 }
 
-.main__social-networks a:hover .logo-instagram, .main__social-networks a:focus .logo-instagram {
+.main__social-networks a:hover .logo-instagram,
+.main__social-networks a:focus .logo-instagram {
     background: url('../assets/svg/Instagram-hover.svg') center/cover no-repeat;
 }
 
-.main__social-networks a:hover .logo-linkedin, .main__social-networks a:focus .logo-linkedin {
+.main__social-networks a:hover .logo-linkedin,
+.main__social-networks a:focus .logo-linkedin {
     background: url('../assets/svg/Linkedin-hover.svg') center/cover no-repeat;
 }
 
-.main__social-networks a:hover .logo-github, .main__social-networks a:focus .logo-github {
+.main__social-networks a:hover .logo-github,
+.main__social-networks a:focus .logo-github {
     background: url('../assets/svg/Github-hover.svg') center/cover no-repeat;
 }
 
