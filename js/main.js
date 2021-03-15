@@ -3,7 +3,7 @@ const btnToggle = document.querySelector(".header__menu--icon");
 btnToggle.addEventListener("click", function () {
   document.getElementById("aside").classList.toggle("active");
   document.getElementById("main").classList.toggle("opacity");
-  document.getElementById("particles-js").classList.toggle("opacity");
+  document.getElementById("particles-js").classList.toggle("index");
   document
     .getElementById("btn-toggle")
     .classList.toggle("header__menu--close-icon");
@@ -15,7 +15,7 @@ panelToggle.addEventListener("click", function () {
   if (document.getElementById("aside").classList.contains("active")) {
     document.getElementById("aside").classList.toggle("active");
     document.getElementById("main").classList.toggle("opacity");
-    document.getElementById("particles-js").classList.toggle("opacity");
+    document.getElementById("particles-js").classList.toggle("index");
     document
       .getElementById("btn-toggle")
       .classList.remove("header__menu--close-icon");
@@ -31,8 +31,8 @@ function aClose() {
   setTimeout(function(){
   if (document.getElementById("aside").classList.contains("active")) {
     document.getElementById("aside").classList.toggle("active");
+    document.getElementById("particles-js").classList.toggle("index");
     document.getElementById("main").classList.toggle("opacity");
-    document.getElementById("particles-js").classList.toggle("opacity");
     document
       .getElementById("btn-toggle")
       .classList.remove("header__menu--close-icon");

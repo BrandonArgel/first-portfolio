@@ -94,3 +94,8 @@
     list-style: none;
     flex-direction: column;
 }
+
+.index {
+    z-index: 20;
+    pointer-events: none;
+}

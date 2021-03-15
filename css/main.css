@@ -225,9 +225,10 @@ main {
     background: url('../assets/img/foto.png') center/cover no-repeat;
 }
 
-#particles-js {
+.particles-js {
     height: 100vh;
     width: 100%;
+    display: flex;
     position: fixed;
     z-index: -1;
     top: 0;
