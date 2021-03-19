@@ -71,7 +71,7 @@ body {
 
 main {
     margin-top: 100px;
-    padding: 20px;
+    padding: 30px;
     font-family: var(--font-mono);
 }
 
@@ -146,30 +146,24 @@ main {
     width: 100%;
 }
 
-.main__about--title,
-.main__proyectos--title,
-.main__projects--title,
-.main__contact--title {
+.title {
     margin: 50px 0px 20px 0px;
     font-size: 2rem;
 }
 
-.main__about--title::after,
-.main__proyectos--title::after,
-.main__projects--title::after,
-.main__contact--title::after {
+.title::after {
     content: "";
     display: block;
     position: relative;
     top: -11px;
     left: 100px;
-    width: 50%;
     height: .5px;
     margin-left: 20px;
+    width: calc(100% - 100px);
     background-color: var(--couleur);
 }
 
-.main__about--title~p {
+.main__about--info p {
     margin-bottom: 20px;
     font-size: 1.6rem;
     line-height: 1.8rem;
@@ -224,11 +218,13 @@ main {
 
 .main__about--img {
     margin: 0 auto;
-    width: 200px;
-    height: 200px;
-    max-width: 300px;
-    max-width: 300px;
-    background: url('../assets/img/foto.png') center/cover no-repeat;
+    min-width: 200px;
+    min-height: 200px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    padding: 30px 30px 0 0;
 }
 
 .particles-js {
@@ -271,7 +267,7 @@ main {
 
 .main__projects--project:hover {
     opacity: 1;
-    margin-top: -10px;
+    transform: translateY(-10px);
     background-color: var(--light-fond);
 }
 
@@ -316,6 +312,13 @@ main {
     background-color: var(--couleur-special);
     color: #000F20;
     font-weight: bold;
+    transform: translateY(-3px);
+}
+
+.project-button:active {
+    transform: translateY(0px);
+    outline: none;
+    background-color: #16FFE2aa;
 }
 
 .main__projects--img {

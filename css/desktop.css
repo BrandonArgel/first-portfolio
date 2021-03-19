@@ -68,45 +68,6 @@ main {
     flex-wrap: wrap;
 }
 
-.main__about--title,
-.main__proyectos--title,
-.main__projects--title,
-.main__contact--title {
-    margin: 50px 0px 20px 0px;
-    font-size: 3rem;
-}
-
-.main__about--title::after,
-.main__proyectos--title::after,
-.main__projects--title::after,
-.main__contact--title::after {
-    content: "";
-    display: block;
-    position: relative;
-    top: -11px;
-    left: 170px;
-    width: 70%;
-    height: .5px;
-    margin-left: 20px;
-    background-color: var(--couleur);
-}
-
-.main__about--title::after {
-    width: 340%;
-}
-
-@media screen and (min-width:1240px) {
-    .main__about--title::after {
-        width: 540%;
-    }
-}
-
-@media screen and (min-width:1440px) {
-    .main__about--title::after {
-        width: 640%;
-    }
-}
-
 .main__about--skills li {
     color: var(--couleur);
     margin-left: 20px;
@@ -117,7 +78,6 @@ main {
 .main__about--container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    margin-right: 50px;
 }
 
 .main__about--info {
@@ -127,16 +87,8 @@ main {
 }
 
 .main__about--img {
-    width: 300px;
-    min-width: 300px;
-    min-height: 300px;
-    max-width: 500px;
-    max-height: 500px;
-    border-radius: 5px;
-    margin: 100px auto;
-    background: url('../assets/img/foto.png') center/cover no-repeat;
+    width: 100%;
 }
-
 
 .main__social-networks {
     display: flex;
