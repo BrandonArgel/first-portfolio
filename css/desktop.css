@@ -105,12 +105,12 @@ svg {
     margin-top: 20px;
 }
 
-.main__projects {
+.main__projects--container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     width: 100%;
     border-radius: 5px;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
     gap: 15px;
     position: relative;
     margin-top: 50px;
