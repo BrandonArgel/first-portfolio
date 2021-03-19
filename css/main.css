@@ -120,12 +120,12 @@ main {
     color: #77FFEE;
     text-decoration: none;
     font-size: 1.6rem;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
     font-weight: 300;
     margin-right: 20px;
-    transition: var(--transition);
+    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
 }
 
 .button:hover,
@@ -133,6 +133,12 @@ main {
     background-color: var(--couleur-special);
     color: #000F20;
     font-weight: bold;
+    transform: translateY(-3px);
+}
+
+.button:active {
+    transform: translateY(5px);
+    outline: none;
 }
 
 .main__about {
