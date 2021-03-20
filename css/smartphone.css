@@ -113,8 +113,8 @@
 .main__about--img {
     min-width: 200px;
     min-height: 200px;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     display: flex;
     justify-content: center;
 }
