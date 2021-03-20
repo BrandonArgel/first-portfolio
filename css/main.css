@@ -393,11 +393,18 @@ main {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    width: auto;
+    transition: var(--transition);
 }
 
 .main__contact--mail:hover,
 .main__contact--mail:focus {
     color: var(--couleur-special);
+    transform: scale(1.1);
+}
+
+.main__contact--mail:active {
+    transform: translateY(5px);
 }
 
 .main__social-networks a:hover,
@@ -419,8 +426,7 @@ main {
 
 .main__social-networks a:hover .logo,
 .main__social-networks a:focus .logo {
-    width: 50px;
-    height: 50px;
+    transform: scale(1.5);
 }
 
 .logo-platzi {

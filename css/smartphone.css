@@ -119,6 +119,10 @@
     justify-content: center;
 }
 
+.footer {
+    top: 0;
+}
+
 @supports (pointer-events: none) {
     .index {
         z-index: 20;
