@@ -248,6 +248,13 @@ main {
     padding: 15px;
 }
 
+.main__about--img img {
+    border-radius: 25%;
+    border: double 10px transparent;
+    background-image: radial-gradient(circle at top left, rgba(0, 255, 255, .3) 10%, rgba(22, 255, 226, 0.8), rgba(0, 255, 255, .3) 70%, rgba(22, 255, 226, 0.8), rgba(0, 255, 255, .3) 90%);
+    background-origin: border-box;
+}
+
 .particles-js {
     height: 100vh;
     width: 100%;
@@ -481,7 +488,7 @@ main {
 }
 
 .opacity {
-    filter: blur(4px);
+    filter: blur(5px);
 }
 
 #preload-01 {
