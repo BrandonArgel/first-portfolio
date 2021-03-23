@@ -40,7 +40,7 @@ function aClose() {
   },100)
 }
 
-// Ocultar Header
+// Header
 let scroll = window.pageYOffset;
 window.onscroll = function () {
   let desplazamiento_actual = window.pageYOffset;
