@@ -111,4 +111,4 @@ class TextoAnimado {
   }
 }
 
-new TextoAnimado("name", "main__hero");
+new TextoAnimado("name", "main__hero--text");

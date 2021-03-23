@@ -138,7 +138,7 @@ main {
     color: var(--couleur-special);
 }
 
-.main__hero:hover .main__hero--presentation-do, .main__hero:hover .main__hero--info{
+#main__hero--text:hover .main__hero--presentation-do, #main__hero--text:hover .main__hero--info{
     color: var(--light-couleur);
 }
 
@@ -202,17 +202,18 @@ main {
 
 .title {
     margin: 50px 0px 20px 0px;
-    font-size: 2rem;
+    font-size: 3rem;
+    display: flex;
+    position: relative;
 }
 
 .title::after {
     content: "";
     display: block;
-    position: relative;
-    top: -11px;
-    left: 100px;
+    position: absolute;
+    top: 20px;
+    right: -70px;
     height: .5px;
-    margin-left: 20px;
     width: calc(100% - 100px);
     background-color: var(--couleur);
 }
