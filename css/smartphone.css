@@ -96,6 +96,10 @@
     right: 0;
 }
 
+.main__hero {
+    margin-bottom: 0px;
+}
+
 .title::after {
     width: calc(100% - 150px);
     height: .5px;
@@ -121,6 +125,42 @@
 
 .footer {
     top: 0;
+}
+
+.main__hero--animated-name {
+    height: 5.2rem;
+}
+
+.main__hero--animated-name>div span {
+    font-size: 5rem;
+    line-height: 50px;
+}
+
+.main__hero--animated-name .segunda-linea {
+    top: 50px;
+}
+
+.main__hero--animated-name>div.animacion {
+    transform: translateY(-52px);
+}
+
+@media screen and (max-width: 440px) {
+    .main__hero--animated-name {
+        height: 4rem;
+    }
+
+    .main__hero--animated-name>div span {
+        font-size: 3.3rem;
+        line-height: 50px;
+    }
+
+    .main__hero--animated-name .segunda-linea {
+        top: 50px;
+    }
+
+    .main__hero--animated-name>div.animacion {
+        transform: translateY(-52px);
+    }
 }
 
 @supports (pointer-events: none) {

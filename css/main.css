@@ -84,7 +84,6 @@ main {
     font-size: 1.6rem;
     font-weight: normal;
     line-height: 2rem;
-    padding-bottom: 20px;
 }
 
 .main__hero--presentation {
@@ -93,10 +92,38 @@ main {
     font-weight: bold;
     line-height: 1.1;
     padding-bottom: 20px;
+    text-decoration: none;
+}
+
+.main__hero--animated-name {
+    display: flex;
+	overflow: hidden;
+    justify-content: start;
+    height: 8rem;
+    max-width: 539px;
+    cursor: pointer;
+}
+
+.main__hero--animated-name > div {
+    display: flex;
+	flex-direction: column;
+	position: relative;
+	transition: .3s ease all;
+}
+
+.main__hero--animated-name > div.animacion {
+	transform: translateY(-80px);
+}
+
+.main__hero--animated-name .segunda-linea {
+	position: absolute;
+	top: 80px;
+    color: var(--couleur-special);
 }
 
 .main__hero--presentation-do {
     color: var(--couleur);
+    transition: var(--transition);
 }
 
 .main__hero--info {
@@ -104,15 +131,21 @@ main {
     font-size: 1.6rem;
     max-width: 490px;
     margin-bottom: 20px;
+    transition: all 0.20s cubic-bezier(0.700, 0.050, 0.460, 1);
 }
 
 .main__hero--info-career {
     color: var(--couleur-special);
 }
 
+.main__hero:hover .main__hero--presentation-do, .main__hero:hover .main__hero--info{
+    color: var(--light-couleur);
+}
+
 .main__hero--buttons {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 40px;
 }
 
 .button {
