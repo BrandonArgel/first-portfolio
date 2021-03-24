@@ -100,13 +100,6 @@
     margin-bottom: 0px;
 }
 
-.title::after {
-    width: calc(100% - 150px);
-    height: .5px;
-    margin-left: 20px;
-    background-color: var(--couleur);
-}
-
 .main__about--skills {
     display: flex;
     margin: 20px 0;
@@ -145,10 +138,6 @@
 }
 
 @media screen and (max-width: 440px) {
-    .main__hero--animated-name {
-        height: 4rem;
-    }
-
     .main__hero--animated-name>div span {
         font-size: 3.3rem;
         line-height: 50px;

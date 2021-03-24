@@ -40,7 +40,8 @@
     padding: 5px;
 }
 
-.header__nav nav ul li a:hover, .header__nav nav ul li a:focus{
+.header__nav nav ul li a:hover,
+.header__nav nav ul li a:focus {
     color: var(--couleur-special);
     outline-color: var(--couleur-special);
 }
@@ -77,12 +78,12 @@ main {
 
 .main__about--container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 
 .main__about--info {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 
