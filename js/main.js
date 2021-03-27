@@ -48,14 +48,12 @@ window.onscroll = function () {
   let desplazamiento_actual = window.pageYOffset;
   if (window.pageYOffset > 0) {
     this.document.getElementById("header").style.background =
-      "rgba(13, 20, 38, .95)";
+      "rgb(13, 20, 38)";
     this.document.getElementById("header").style.boxShadow =
       "0px 0px 50px 10px rgba(0, 0, 0, 0.80)";
-    document.getElementById("header").classList.add("filter");
   } else if (window.pageYOffset == 0) {
     this.document.getElementById("header").style.boxShadow = "none";
     this.document.getElementById("header").style.background = "transparent";
-    document.getElementById("header").classList.remove("filter");
   }
   scroll = desplazamiento_actual;
 };

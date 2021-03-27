@@ -55,10 +55,6 @@ body {
     z-index: 1;
 }
 
-.filter {
-    backdrop-filter: blur(10px);
-}
-
 .header__invisible {
     position: relative;
     width: inherit;
@@ -101,7 +97,8 @@ main {
     justify-content: start;
     height: 8rem;
     max-width: 539px;
-    cursor: pointer;
+    text-decoration: none;
+    color: var(--light-couleur);
 }
 
 .main__hero--animated-name>div {
@@ -160,27 +157,6 @@ main {
     font-weight: 300;
     margin-right: 20px;
     transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
-}
-
-.main__button--cv {
-    position: relative;
-}
-
-.main__button--cv:hover::before {
-    content: "Pronto";
-    display: flex;
-    align-items: center;
-    position: absolute;
-    background-color: var(--dark-fond);
-    border-radius: 10px;
-    top: -50px;
-    left: 0px;
-    color: var(--light-couleur);
-    width: auto;
-    height: 40px;
-    left: -10px;
-    text-align: center;
-    padding: 0 20px;
 }
 
 .button:hover,
