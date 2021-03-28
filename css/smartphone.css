@@ -115,6 +115,10 @@
     justify-content: center;
 }
 
+.main__about--img img {
+    width: 250px;
+}
+
 .footer {
     top: 0;
 }
