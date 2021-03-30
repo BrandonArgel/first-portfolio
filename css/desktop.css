@@ -40,6 +40,23 @@
     padding: 5px;
 }
 
+.subrayado::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: var(--couleur-special);
+}
+
+.subrayado:hover {
+    color: var(--couleur-special);
+}
+
+.subrayado:hover::after {
+    width: 100%;
+    transition: width .5s;
+}
+
 .header__nav nav ul li a:hover,
 .header__nav nav ul li a:focus {
     color: var(--couleur-special);

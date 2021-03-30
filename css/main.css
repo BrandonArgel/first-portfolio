@@ -196,6 +196,7 @@ main {
 .main__about--studies {
     color: var(--couleur-special);
     text-decoration: none;
+    display: inline-block;
 }
 
 .main__about .main__about--info-motto {
