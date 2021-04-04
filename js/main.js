@@ -48,9 +48,9 @@ window.onscroll = function () {
   let desplazamiento_actual = window.pageYOffset;
   if (window.pageYOffset > 0) {
     this.document.getElementById("header").style.background =
-      "rgb(13, 20, 38)";
+      "#0a101e";
     this.document.getElementById("header").style.boxShadow =
-      "0px 0px 50px 10px rgba(0, 0, 0, 0.80)";
+      "0px 0px 50px 10px rgba(0, 0, 0, 1)";
   } else if (window.pageYOffset == 0) {
     this.document.getElementById("header").style.boxShadow = "none";
     this.document.getElementById("header").style.background = "transparent";

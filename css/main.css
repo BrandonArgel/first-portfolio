@@ -1,7 +1,7 @@
 :root {
     --dark-fond: #0D1416;
-    --fond: #0D1426;
-    --light-fond: #0D1436;
+    --fond: #0a101e;
+    --light-fond: #0a102b;
     --couleur-special: #16FFE2;
     --light-couleur: #CCDDFF;
     --couleur: #99aacc;
@@ -50,7 +50,7 @@ body {
     display: flex;
     position: fixed;
     top: 0;
-    transition: all .15s cubic-bezier(0.700, 0.050, 0.460, 1);
+    transition: var(--transition);
     background-color: transparent;
     z-index: 1;
 }
@@ -401,6 +401,7 @@ main {
     background-color: transparent;
     color: var(--couleur-special);
     transform: scale3d(1.1, 1.1, 1.1);
+    border: 3px solid var(--couleur-special);
 }
 
 .title-projects {
