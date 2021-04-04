@@ -131,5 +131,20 @@ svg {
     margin-bottom: 50px;
     gap: 15px;
     position: relative;
-    margin-top: 50px;
+    margin: 50px 0;
+}
+
+.main__container--projects {
+    margin-bottom: 50px;
+}
+
+.main__container--buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.project-button {
+    padding: 10px;
+    align-items: center;
+    margin: 0 10px;
 }

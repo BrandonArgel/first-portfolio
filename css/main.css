@@ -320,7 +320,7 @@ main {
 
 .main__container--buttons {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .project-button {
@@ -329,13 +329,15 @@ main {
     text-decoration: none;
     font-size: 1.6rem;
     border-radius: 5px;
-    padding: 10px;
+    padding: 5px;
     margin-bottom: 20px;
-    margin-left: 20px;
     font-weight: 300;
-    margin-right: 20px;
     transition: var(--transition);
-    height: 40px;
+    max-height: 35px;
+}
+
+.github-button, .portfolio-button {
+    display: flex;
 }
 
 .project-button:hover,
@@ -343,7 +345,16 @@ main {
     background-color: var(--couleur-special);
     color: #000F20;
     font-weight: bold;
-    transform: translateY(-3px);
+}
+
+.github-button:hover .button-img-github,
+.github-button:focus .button-img-github {
+    background-image: url('../assets/svg/Github-button.svg');
+}
+
+.portfolio-button:hover .button-img-portfolio,
+.portfolio-button:focus .button-img-portfolio {
+    background-image: url('../assets/svg/Portfolio-button.svg');
 }
 
 .project-button:active {
@@ -359,6 +370,46 @@ main {
 .main__projects--img img {
     width: 100%;
     margin-bottom: 20px;
+}
+
+.button-img-github {
+    background-image: url('../assets/svg/Github-hover.svg');
+    background-position: center;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.button-img-portfolio {
+    background-image: url('../assets/svg/Portfolio.svg');
+    background-position: center;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.button-projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-projects a:hover,
+.button-projects a:focus {
+    background-color: transparent;
+    color: var(--couleur-special);
+    transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.title-projects {
+    font-size: clamp(4rem, 8vw, 8rem);;
+}
+
+.text-projects {
+    font-size: 2rem;
+    color: var(--couleur);
 }
 
 .main__contact {
