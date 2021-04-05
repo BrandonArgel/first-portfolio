@@ -6,7 +6,7 @@ I´m currently learning about software and web development at Platzi, and finish
 
 ## Credits
 
-This theme was designed with the inspiration from these fine folks
+This portfolio was designed with the inspiration from some repositories in github:
 
 - [Vincent Garreau](https://github.com/VincentGarreau/particles.js/)
 - [Brittany Chiang](https://github.com/bchiang7/v4)
