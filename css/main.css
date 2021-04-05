@@ -157,6 +157,7 @@ main {
     font-weight: 300;
     margin-right: 20px;
     transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+    text-align: center;
 }
 
 .button:hover,
@@ -267,6 +268,7 @@ main {
 
 .main__projects {
     padding-top: 100px;
+    overflow-x: hidden;
 }
 
 .main__projects--container {

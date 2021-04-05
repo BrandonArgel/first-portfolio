@@ -19,4 +19,5 @@ window.onload = window.addEventListener('scroll', function(){
     fade('right');
     fade('up');
     fade('down');
+    fade('none');
 })

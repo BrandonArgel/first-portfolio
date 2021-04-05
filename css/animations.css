@@ -1,25 +1,28 @@
-.fadeInDownLogo{
+.fadeInDownLogo {
     animation-duration: .5s;
     animation-fill-mode: both;
     animation-name: fadeInDown;
 }
 
-.fadeInDownOne{
-    animation-duration: 1s;
+.fadeInDownOne {
+    animation-duration: .5s;
     animation-fill-mode: both;
     animation-name: fadeInDown;
+    animation-delay: .2s;
 }
 
-.fadeInDownTwo{
-    animation-duration: 1.1s;
+.fadeInDownTwo {
+    animation-duration: .5s;
     animation-fill-mode: both;
     animation-name: fadeInDown;
+    animation-delay: .4s;
 }
 
-.fadeInDownThree{
-    animation-duration: 1.2s;
+.fadeInDownThree {
+    animation-duration: .5s;
     animation-fill-mode: both;
     animation-name: fadeInDown;
+    animation-delay: .6s;
 }
 
 @keyframes fadeInDown {
@@ -36,7 +39,7 @@
     }
 }
 
-.fadeInLeft{
+.fadeInLeft {
     animation-duration: 1s;
     animation-fill-mode: both;
     animation-name: fadeInLeft;
@@ -61,10 +64,25 @@
     transition: all 0.5s;
 }
 
-.transform_up {transform: translateY(20%);}
-.transform_down {transform: translateY(-20%);}
-.transform_right {transform: translateX(20%);}
-.transform_left {transform: translateX(-20%);}
+.transform_up {
+    transform: translateY(20%);
+}
+
+.transform_down {
+    transform: translateY(-20%);
+}
+
+.transform_right {
+    transform: translateX(20%);
+}
+
+.transform_left {
+    transform: translateX(-20%);
+}
+
+.transform_none {
+    transform: none;
+}
 
 .appear {
     opacity: 1;
