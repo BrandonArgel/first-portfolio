@@ -468,9 +468,9 @@ main {
     color: var(--light-couleur);
     font-size: 1.5rem;
     display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    width: auto;
+    position: relative;
+    margin: 0 auto 20px;
+    width: 200px;
     transition: var(--transition);
 }
 
