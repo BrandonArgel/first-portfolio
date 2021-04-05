@@ -15,14 +15,14 @@
     animation-duration: .5s;
     animation-fill-mode: both;
     animation-name: fadeInDown;
-    animation-delay: .4s;
+    animation-delay: .3s;
 }
 
 .fadeInDownThree {
     animation-duration: .5s;
     animation-fill-mode: both;
     animation-name: fadeInDown;
-    animation-delay: .6s;
+    animation-delay: .4s;
 }
 
 @keyframes fadeInDown {
