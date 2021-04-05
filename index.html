@@ -9,6 +9,7 @@
     <title>Brandon Argel</title>
     <link rel="preload" href="./css/main.css" as="style" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/animations.css">
     <link rel="stylesheet" href="./css/smartphone.css" media="(max-width: 777px)" />
     <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 778px)" />
     <link rel="apple-touch-icon" href="./assets/svg/logoo.svg" />
@@ -21,7 +22,7 @@
       <header id="header" class="header">
         <div class="header__invisible">
           <a href="./index.html">
-            <img class="header-logo" src="./assets/svg/logoo.svg" alt="Logo" height="50" width="50" />
+            <img class="header-logo fadeInDownLogo" src="./assets/svg/logoo.svg" alt="Logo" height="50" width="50" />
           </a>
           <div id="btn-toggle" class="header__menu--icon"></div>
         </div>
@@ -29,13 +30,13 @@
           <nav>
             <ul>
               <li>
-                <a href="#main__about" class="about subrayado">Sobre mí</a>
+                <a href="#main__about" class="about subrayado fadeInDownOne">Sobre mí</a>
               </li>
               <li>
-                <a href="#main__projects" class="projects subrayado">Proyectos</a>
+                <a href="#main__projects" class="projects subrayado fadeInDownTwo">Proyectos</a>
               </li>
               <li>
-                <a href="#main__contact" class="contact subrayado">Contacto</a>
+                <a href="#main__contact" class="contact subrayado fadeInDownThree">Contacto</a>
               </li>
             </ul>
           </nav>
@@ -58,7 +59,7 @@
       </header>
       <main id="main">
         <!-- Hero -->
-        <section class="main__hero">
+        <section class="main__hero fadeInLeft">
         <div id="main__hero--text">
           <h1 class="main__hero--title">Hola, mi nombre es</h1>
           <div class="main__hero--presentation">
@@ -79,7 +80,7 @@
           </div>
         </section>
         <!-- About -->
-        <section class="main__about" id="main__about">
+        <section class="main__about animation fade_up" id="main__about">
           <h2 class="title">Sobre mí</h2>
           <div class="main__about--container">
             <div class="main__about--info">
@@ -120,7 +121,7 @@
         </h2>
         <section class="main__projects--container">
           <!-- Blogs Project -->
-          <section class="main__projects--project">
+          <section class="main__projects--project animation fade_left">
             <div class="main__project--info">
               <h3 class="main__project--title">Blog Personal</h3>
               <p class="main__project--description">
@@ -136,7 +137,7 @@
             </div>
           </section>
           <!-- Game Rock Paper or Scissor -->
-          <section class="main__projects--project">
+          <section class="main__projects--project animation fade_right">
             <div class="main__project--info">
               <h3 class="main__project--title">Juego de Piedra Papel o Tijera</h3>
               <p class="main__project--description">
@@ -152,7 +153,7 @@
             </div>
           </section>
           <!-- Music Player -->
-          <section class="main__projects--project">
+          <section class="main__projects--project animation fade_left">
             <div class="main__project--info">
               <h3 class="main__project--title">Reproductor de Música</h3>
               <p class="main__project--description">
@@ -168,7 +169,7 @@
             </div>
           </section>
            <!-- Platzi Video Project -->
-          <section class="main__projects--project">
+          <section class="main__projects--project animation fade_right">
             <div class="main__project--info">
               <h3 class="main__project--title">Platzi Video</h3>
               <p class="main__project--description">
@@ -189,6 +190,7 @@
       <div class="button-projects"><a class="button" href="./projects.html">Ver todos los proyectos</a></div>
 
         <!-- Contact -->
+        <div class="animation fade_up">
         <section id="main__contact" class="main__contact">
           <h2 class="title">Contacto</h2>
           <p class="main__contact--info">
@@ -228,6 +230,7 @@
         <footer class="footer">
           <p class="footer--info">© Sitio construido por Brandon Argel 2021</p>
         </footer>
+      </div>
       </main>
     </div>
     <div>
@@ -242,5 +245,6 @@
     <script src="./js/app.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/texto-animado.js"></script>
+    <script src="./js/animations.js"></script>
   </body>
 </html>

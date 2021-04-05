@@ -405,12 +405,30 @@ main {
 }
 
 .title-projects {
-    font-size: clamp(4rem, 8vw, 8rem);;
+    margin: 50px 0 20px;
+    font-size: clamp(4rem, 8vw, 7rem);;
 }
 
 .text-projects {
     font-size: 2rem;
     color: var(--couleur);
+}
+
+.main__projects--page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.main__projects--page-about {
+    margin-left: 50px;
+}
+
+@media (max-width: 1200px){
+    .main__projects--page {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .main__contact {
