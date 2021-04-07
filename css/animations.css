@@ -1,28 +1,26 @@
 .fadeInDownLogo {
-    animation-duration: .5s;
+    animation-duration: .3s;
     animation-fill-mode: both;
     animation-name: fadeInDown;
 }
 
 .fadeInDownOne {
     animation-duration: .5s;
-    animation-fill-mode: both;
     animation-name: fadeInDown;
-    animation-delay: .2s;
 }
 
 .fadeInDownTwo {
     animation-duration: .5s;
     animation-fill-mode: both;
     animation-name: fadeInDown;
-    animation-delay: .3s;
+    animation-delay: .1s;
 }
 
 .fadeInDownThree {
     animation-duration: .5s;
     animation-fill-mode: both;
     animation-name: fadeInDown;
-    animation-delay: .4s;
+    animation-delay: .2s;
 }
 
 @keyframes fadeInDown {
