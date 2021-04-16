@@ -140,6 +140,10 @@
     transform: translateY(-52px);
 }
 
+.main__projects--page-about {
+    margin-left: 0px;
+}
+
 @media screen and (max-width: 440px) {
     .main__hero--animated-name>div span {
         font-size: 3.3rem;
