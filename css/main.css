@@ -420,6 +420,13 @@ main {
     border: 3px solid var(--couleur-special);
 }
 
+.main__projects--description {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    font-weight: normal;
+    color: var(--couleur);
+}
+
 .title-projects {
     margin: 50px 0 20px;
     font-size: clamp(4rem, 8vw, 7rem);;
