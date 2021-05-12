@@ -245,6 +245,7 @@ main {
     color: var(--couleur);
     font-size: 1.4rem;
     line-height: 1.5rem;
+    margin-block-end: 5px;
 }
 
 .main__about--skills li::before {
