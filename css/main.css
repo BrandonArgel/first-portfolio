@@ -340,6 +340,12 @@ main {
     justify-content: space-evenly;
 }
 
+.main__about--projects {
+    color: var(--couleur-special);
+    text-decoration: none;
+    display: inline-block;
+}
+
 .project-button {
     border: 1px solid var(--couleur-special);
     color: #77FFEE;
