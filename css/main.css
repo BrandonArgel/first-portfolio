@@ -292,6 +292,7 @@ main {
     width: 100%;
     justify-content: space-between;
     border-radius: 5px;
+    margin-top: 30px;
 }
 
 .main__projects--title {
@@ -440,7 +441,7 @@ main {
 }
 
 .text-projects {
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: var(--couleur);
 }
 
