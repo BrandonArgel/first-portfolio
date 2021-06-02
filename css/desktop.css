@@ -43,6 +43,7 @@
 .subrayado::after {
     content: '';
     display: block;
+    margin: 0 auto;
     width: 0;
     height: 2px;
     background-color: var(--couleur-special);
