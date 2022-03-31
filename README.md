@@ -2,7 +2,7 @@
 
 I´m currently learning about software and web development at Platzi, and finishing my high school studies in the career Professional computer technologist.
 
-[Link to the website](https://brandonargel.github.io)
+[Link to the website](https://brandonargel.github.io/first-portfolio/)
 
 ## Credits
 
